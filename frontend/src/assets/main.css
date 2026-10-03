@@ -1,0 +1,39 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #b022e8; background: #f3f4f6; line-height: 1.5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+h2 { margin: 0 0 1rem; }
+:focus-visible { outline: 3px solid #290ce4; outline-offset: 2px; }
+
+.topbar { display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #ed622f; color: white; }
+.topbar h1 { margin: 0; font-size: 1.4rem; }
+.topbar nav { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.topbar a { color: white; text-decoration: none; }
+.topbar a.router-link-active { color: #a8ff3e; }
+.container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+
+.card, .table-wrapper { background: white; border-radius: .75rem; padding: 1rem; margin: 1rem 0; box-shadow: 0 2px 10px #0001; }
+.table-wrapper { overflow-x: auto; }
+.form-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); align-items: start; }
+.form-actions { display: flex; gap: .5rem; align-items: end; }
+.field { display: grid; gap: .35rem; }
+.field--check { grid-auto-flow: column; justify-content: start; align-items: center; gap: .5rem; }
+.field input, select { padding: .65rem; border: 1px solid #cbd5e1; border-radius: .4rem; font: inherit; }
+.field--check input { padding: 0; width: 1.1rem; height: 1.1rem; }
+.field__error { color: #b91c1c; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .7rem; border-bottom: 1px solid #e5e7eb; text-align: left; }
+.actions { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+
+.button { border: 0; border-radius: .4rem; padding: .6rem .8rem; cursor: pointer; font: inherit; }
+.button--primary { background: #5dee23; color: white; }
+.button--secondary { background: #e2e8f0; color: #172554; }
+.button--danger { background: #dc2626; color: white; }
+.button:disabled { opacity: .6; cursor: not-allowed; }
+
+.alert { padding: .75rem; border-radius: .4rem; }
+.alert--error { color: #b91c1c; background: #fee2e2; }
+
+.stats { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.stat { display: grid; text-decoration: none; color: inherit; }
+.stat strong { font-size: 2.5rem; color: #af20ed; }
